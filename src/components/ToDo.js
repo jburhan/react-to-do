@@ -5,7 +5,7 @@ class ToDo extends Component {
     return (
       // return will return JSX, a syntax for defining HTML in JS
       <li>
-        <input type="checkbox" checked={ this.props.isCompleted} />
+        <input type="checkbox" checked={ this.props.isCompleted } onChange={ this.props.toggleComplete } />
         <span> { this.props.description } </span>
       </li>
     );
