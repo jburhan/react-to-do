@@ -4,7 +4,10 @@ class ToDo extends Component {
   render() {
     return (
       // return will return JSX, a syntax for defining HTML in JS
-      <li> A todo will go here </li>
+      <li>
+        <input type="checkbox" checked={ this.props.isCompleted} />
+        <span> { this.props.description } </span>
+      </li>
     );
 
   }
